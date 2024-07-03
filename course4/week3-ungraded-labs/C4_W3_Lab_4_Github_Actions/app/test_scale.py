@@ -3,7 +3,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 def test_pipeline_and_scaler():
-    isPipeline = instance(clf, Pipeline)
+    isPipeline = isnstance(clf, Pipeline)
     assert isPipeline
     if isPipeline:
         firstStep = [v for v in clf.named_steps.values()][0]
