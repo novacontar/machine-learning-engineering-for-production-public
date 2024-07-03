@@ -5,7 +5,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel, conlist
 
 
-
 app = FastAPI(title="Predicting Wine Class with batching")
 
 # Open classifier in global scope
@@ -23,3 +22,6 @@ def predict(wine: Wine):
     np_batches = np.array(batches)
     pred = clf.predict(np_batches).tolist()
     return {"Prediction": pred}
+
+
+# a comment to test CI/CD
